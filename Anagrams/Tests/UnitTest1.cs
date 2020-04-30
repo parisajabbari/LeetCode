@@ -13,7 +13,7 @@ namespace Tests
              string[] str = {"eat", "tea", "tan", "ate", "nat", "bat"};
             //string[] str = {"eat", "tea", "ate"};
             var actual = Anagrams.FindAnagrams(str);
-            var expected = new List<List<string>>();
+            var expected = new List<IList<string>>();
             expected.Add(new List<string>{"eat", "tea", "ate"});
             expected.Add(new List<string>{"tan","nat"});
             expected.Add(new List<string>{"bat"});
