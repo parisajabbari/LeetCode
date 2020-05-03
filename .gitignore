@@ -5,6 +5,7 @@
 *.cache
 *.props
 *.txt
+
 *.targets
 *.CopyComplete
 *.AssemblyInfo.cs
