@@ -11,15 +11,8 @@ namespace project
             {
                 return true;
             }
-            //bool output = magazine.Contains(ransomNote);
             Dictionary<char, int> noteDict = new Dictionary<char, int>();
             Dictionary<char, int> magazineDict = new Dictionary<char, int>();
-
-            // var ArrayRansomeNote = ransomNote.ToCharArray();
-            // Array.Sort(ArrayRansomeNote);
-
-            // var ArrayMagazine = magazine.ToCharArray();
-            // Array.Sort(ArrayMagazine);
 
             foreach (var ch in ransomNote)
             {
@@ -43,8 +36,7 @@ namespace project
 
             foreach (var kvpRansomeNote in noteDict)
             {
-                if(magazineDict.ContainsKey(kvpRansomeNote.Key))
-                {
+
                     int value = 0;
                     magazineDict.TryGetValue(kvpRansomeNote.Key, out value);
                     if(value >= kvpRansomeNote.Value) 
@@ -54,12 +46,7 @@ namespace project
                     else
                     {
                         return false;
-                    }           
-                }
-                else
-                {
-                    return false;
-                }    
+                    }              
                 
             }
             return true;
