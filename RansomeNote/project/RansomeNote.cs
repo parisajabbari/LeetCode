@@ -12,7 +12,7 @@ namespace project
                 return true;
             }
             Dictionary<char, int> noteDict = new Dictionary<char, int>();
-            Dictionary<char, int> magazineDict = new Dictionary<char, int>();
+            Dictionary<char, int> magazineDict = new Dictionary<char, int>();  
 
             foreach (var ch in ransomNote)
             {
